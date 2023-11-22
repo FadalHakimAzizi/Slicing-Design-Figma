@@ -1,0 +1,100 @@
+* {
+  font-family: "Epilogue", sans-serif;
+  font-family: "Mulish", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+    min-height: 2000px;
+}
+
+@mixin text-bold {
+  $primary-color: #2d2d2d;
+  font-weight: 600;
+}
+
+@mixin text-light {
+  $primary-color: #2d2d2d;
+  font-weight: 400;
+}
+
+$primary-color: #2d2d2d;
+
+// navbar
+
+nav {
+  a.navbar-brand {
+    @include text-bold();
+    font-size: 22px;
+  }
+
+  .navbar-nav {
+    a {
+      @include text-light();
+      color: $primary-color !important;
+      font-size: 19px;
+      margin: 0 1.5rem;
+    }
+  }
+}
+
+// home
+
+section.home {
+    padding-top: 8rem;
+    .heading {
+        h1 {
+            @include text-bold();
+            font-size: 80px;
+            padding-top: 1.2rem
+        }
+        h5 {
+            @include text-bold();
+            font-size: 20;
+        }
+        p {
+            font-size: 17px;
+            @include text-light();
+            padding-top: 2rem;
+        }
+        .image-heading img {
+            margin-top: -3.2rem;
+        }
+    }
+}
+
+// logos
+
+.logos {
+    margin-top: 10rem;
+    padding: 5rem 0;
+    border-top: 3px solid #ccc;
+    border-bottom: 3px solid #ccc;
+}
+
+// skills
+
+.skills {
+    margin-top: 12rem;
+    .card-skill {
+        h2 {
+            font-size: 27px;
+            @include text-bold();
+            margin-top: 3.3rem;
+        }
+        p {
+            font-size: 19px;
+            @include text-light();
+            line-height: 27px;
+            margin-top: 1rem;
+        }
+    }
+}
+
+// Media Query
+// Handphone
+@media only screen and (max-width: 768px) {
+    .home .heading .image-heading {
+      margin-top: 5rem;
+    }
+  }
