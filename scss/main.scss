@@ -5,7 +5,7 @@
 }
 
 body {
-    min-height: 2000px;
+  min-height: 4000px;
 }
 
 @mixin text-bold {
@@ -41,60 +41,224 @@ nav {
 // home
 
 section.home {
-    padding-top: 8rem;
-    .heading {
-        h1 {
-            @include text-bold();
-            font-size: 80px;
-            padding-top: 1.2rem
-        }
-        h5 {
-            @include text-bold();
-            font-size: 20;
-        }
-        p {
-            font-size: 17px;
-            @include text-light();
-            padding-top: 2rem;
-        }
-        .image-heading img {
-            margin-top: -3.2rem;
-        }
+  padding-top: 8rem;
+  .heading {
+    h1 {
+      @include text-bold();
+      font-size: 80px;
+      padding-top: 1.2rem;
     }
+    h5 {
+      @include text-bold();
+      font-size: 20;
+    }
+    p {
+      font-size: 17px;
+      @include text-light();
+      padding-top: 2rem;
+    }
+    .image-heading img {
+      margin-top: -3.2rem;
+    }
+  }
 }
 
 // logos
 
 .logos {
-    margin-top: 10rem;
-    padding: 5rem 0;
-    border-top: 3px solid #ccc;
-    border-bottom: 3px solid #ccc;
+  margin-top: 10rem;
+  padding: 5rem 0;
+  border-top: 3px solid #ccc;
+  border-bottom: 3px solid #ccc;
 }
 
 // skills
 
 .skills {
-    margin-top: 12rem;
-    .card-skill {
-        h2 {
-            font-size: 27px;
-            @include text-bold();
-            margin-top: 3.3rem;
+  margin-top: 12rem;
+  .card-skill {
+    h2 {
+      font-size: 27px;
+      @include text-bold();
+      margin-top: 3.3rem;
+    }
+    p {
+      font-size: 19px;
+      @include text-light();
+      line-height: 27px;
+      margin-top: 1rem;
+    }
+  }
+}
+
+//  works
+
+.works {
+  margin-top: 12rem;
+  .header-works {
+    h2 {
+      font-size: 35px;
+      @include text-bold();
+    }
+  }
+  .card-works {
+    margin-top: 5.5rem;
+    h2 {
+      font-size: 20px;
+      @include text-bold();
+      line-height: 27px;
+      margin-top: 1rem;
+    }
+    p {
+      font-size: 17px;
+      @include text-light();
+      line-height: 27px;
+    }
+  }
+}
+
+// clients
+
+.item1 {
+  grid-area: foto;
+}
+.item2 {
+  grid-area: bintang;
+}
+.item3 {
+  grid-area: credit;
+}
+
+.star {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-areas:
+    "foto bintang"
+    "foto credit";
+  gap: 18px;
+  margin-right: 5rem;
+}
+
+.clients {
+  margin-top: 12rem;
+  .header-clients {
+    font-size: 35px;
+    @include text-bold();
+    line-height: 27px;
+  }
+  .clients-cards {
+    margin-top: 5.5rem;
+    .card {
+      background-color: #fffcf5;
+      border: solid #ffd285 2px;
+      height: 344px;
+      width: 355px;
+      padding: 30px;
+    }
+    .clients-card {
+      p {
+        font-size: 22px;
+        @include text-bold();
+        line-height: 27px;
+      }
+      .star {
+        .item2 {
+          i {
+            padding: 2px;
+          }
         }
         p {
-            font-size: 19px;
-            @include text-light();
-            line-height: 27px;
-            margin-top: 1rem;
+          font-size: 17px;
+          @include text-light();
         }
+      }
     }
+  }
+}
+
+// footer
+
+footer {
+  .container {
+    margin-top: 12rem;
+    border-top: 3px solid #ccc;
+    .row {
+      .header-footer {
+        h1 {
+          margin-top: 5.5rem;
+          font-size: 35px;
+          @include text-bold();
+          line-height: 27px;
+        }
+        p {
+          margin-top: 3rem;
+          font-size: 17px;
+          @include text-light();
+          line-height: 27px;
+          width: 345px;
+        }
+        .icon {
+          margin-top: 3rem;
+          font-size: 28px;
+          i:nth-child(1) {
+            margin-right: 10px;
+          }
+          i:nth-child(2) {
+            margin: 0 10px;
+          }
+          i:nth-child(3) {
+            margin: 0 10px;
+          }
+          i:nth-child(4) {
+            margin: 0 10px;
+          }
+          i:nth-child(5) {
+            margin: 0 10px;
+          }
+        }
+      }
+      .field {
+        margin-top: 5.5rem;
+        .container-input {
+          form {
+              input[type=text], select {
+                width: 100%;
+                padding: 20px 20px;
+                margin: 12px 0;
+                display: inline-block;
+                border: none;
+                background-color: #F3F3F3;
+                font-size: 18px;
+              }
+              input[type=textarea], select {
+                width: 100%;
+                padding: 100px 20px;
+                margin: 12px 0;
+                display: inline-block;
+                border: none;
+                background-color: #F3F3F3;
+                font-size: 18px;
+              }
+              input[type=submit] {
+                background-color: #2D2D2D;
+                color: white;
+                padding: 20px 80px;
+                margin: 24px 0;
+                border: none;
+                cursor: pointer;
+                font-size: 18px;
+              }
+          }
+        }
+      }
+    }
+  }
 }
 
 // Media Query
 // Handphone
 @media only screen and (max-width: 768px) {
-    .home .heading .image-heading {
-      margin-top: 5rem;
-    }
+  .home .heading .image-heading {
+    margin-top: 5rem;
   }
+}

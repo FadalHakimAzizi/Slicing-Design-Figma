@@ -5,7 +5,7 @@
 }
 
 body {
-  min-height: 2000px;
+  min-height: 4000px;
 }
 
 nav a.navbar-brand {
@@ -60,6 +60,146 @@ section.home .heading .image-heading img {
   font-weight: 400;
   line-height: 27px;
   margin-top: 1rem;
+}
+
+.works {
+  margin-top: 12rem;
+}
+.works .header-works h2 {
+  font-size: 35px;
+  font-weight: 600;
+}
+.works .card-works {
+  margin-top: 5.5rem;
+}
+.works .card-works h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  margin-top: 1rem;
+}
+.works .card-works p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.item1 {
+  grid-area: foto;
+}
+
+.item2 {
+  grid-area: bintang;
+}
+
+.item3 {
+  grid-area: credit;
+}
+
+.star {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-areas: "foto bintang" "foto credit";
+  gap: 18px;
+  margin-right: 5rem;
+}
+
+.clients {
+  margin-top: 12rem;
+}
+.clients .header-clients {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 27px;
+}
+.clients .clients-cards {
+  margin-top: 5.5rem;
+}
+.clients .clients-cards .card {
+  background-color: #fffcf5;
+  border: solid #ffd285 2px;
+  height: 344px;
+  width: 355px;
+  padding: 30px;
+}
+.clients .clients-cards .clients-card p {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27px;
+}
+.clients .clients-cards .clients-card .star .item2 i {
+  padding: 2px;
+}
+.clients .clients-cards .clients-card .star p {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+footer .container {
+  margin-top: 12rem;
+  border-top: 3px solid #ccc;
+}
+footer .container .row .header-footer h1 {
+  margin-top: 5.5rem;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 27px;
+}
+footer .container .row .header-footer p {
+  margin-top: 3rem;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+  width: 345px;
+}
+footer .container .row .header-footer .icon {
+  margin-top: 3rem;
+  font-size: 28px;
+}
+footer .container .row .header-footer .icon i:nth-child(1) {
+  margin-right: 10px;
+}
+footer .container .row .header-footer .icon i:nth-child(2) {
+  margin: 0 10px;
+}
+footer .container .row .header-footer .icon i:nth-child(3) {
+  margin: 0 10px;
+}
+footer .container .row .header-footer .icon i:nth-child(4) {
+  margin: 0 10px;
+}
+footer .container .row .header-footer .icon i:nth-child(5) {
+  margin: 0 10px;
+}
+footer .container .row .field {
+  margin-top: 5.5rem;
+}
+footer .container .row .field .container-input form input[type=text], footer .container .row .field .container-input form select {
+  width: 100%;
+  padding: 20px 20px;
+  margin: 12px 0;
+  display: inline-block;
+  border: none;
+  background-color: #F3F3F3;
+  font-size: 18px;
+}
+footer .container .row .field .container-input form input[type=textarea], footer .container .row .field .container-input form select {
+  width: 100%;
+  padding: 100px 20px;
+  margin: 12px 0;
+  display: inline-block;
+  border: none;
+  background-color: #F3F3F3;
+  font-size: 18px;
+}
+footer .container .row .field .container-input form input[type=submit] {
+  background-color: #2D2D2D;
+  color: white;
+  padding: 20px 80px;
+  margin: 24px 0;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
 }
 
 @media only screen and (max-width: 768px) {
