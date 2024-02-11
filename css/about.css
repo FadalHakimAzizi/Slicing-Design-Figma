@@ -1,0 +1,133 @@
+* {
+  font-family: "Epilogue", sans-serif;
+  font-family: "Mulish", sans-serif;
+  box-sizing: border-box;
+}
+
+nav a.navbar-brand {
+  font-weight: 600;
+  font-size: 22px;
+}
+nav .navbar-nav a {
+  font-weight: 400;
+  color: #2d2d2d !important;
+  font-size: 19px;
+  margin: 0 1.5rem;
+}
+
+.about {
+  background-color: #f9e6f0;
+}
+.about .profile {
+  padding: 12rem 0;
+}
+.about .profile .persona img {
+  border: solid black 2px;
+}
+.about .profile .persona h2 {
+  margin-top: 1.5rem;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 5px;
+}
+.about .profile .persona p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.about .profile .text-persona h2 {
+  margin-top: 4rem;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 15px;
+}
+.about .profile .text-persona p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.main .row .text h3 {
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0.2px;
+}
+.main .row .text p:nth-child(even) {
+  width: 98%;
+  background-color: #009379;
+  height: 36px;
+  line-height: 36px;
+  color: #f6dce9;
+}
+
+footer .container {
+  margin-top: 12rem;
+  border-top: 3px solid #ccc;
+}
+footer .container .row .header-footer h1 {
+  margin-top: 5.5rem;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 27px;
+}
+footer .container .row .header-footer p {
+  margin-top: 3rem;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+  width: 345px;
+}
+footer .container .row .header-footer .icon {
+  margin-top: 3rem;
+  font-size: 28px;
+}
+footer .container .row .header-footer .icon i:nth-child(1) {
+  margin-right: 10px;
+}
+footer .container .row .header-footer .icon i:nth-child(2) {
+  margin: 0 10px;
+}
+footer .container .row .header-footer .icon i:nth-child(3) {
+  margin: 0 10px;
+}
+footer .container .row .header-footer .icon i:nth-child(4) {
+  margin: 0 10px;
+}
+footer .container .row .header-footer .icon i:nth-child(5) {
+  margin: 0 10px;
+}
+footer .container .row .field {
+  margin-top: 5.5rem;
+}
+footer .container .row .field .container-input form input[type=text],
+footer .container .row .field .container-input form select {
+  width: 100%;
+  padding: 20px 20px;
+  margin: 12px 0;
+  display: inline-block;
+  border: none;
+  background-color: #f3f3f3;
+  font-size: 18px;
+}
+footer .container .row .field .container-input form input[type=textarea],
+footer .container .row .field .container-input form select {
+  width: 100%;
+  padding: 100px 20px;
+  margin: 12px 0;
+  display: inline-block;
+  border: none;
+  background-color: #f3f3f3;
+  font-size: 18px;
+}
+footer .container .row .field .container-input form input[type=submit] {
+  background-color: #2d2d2d;
+  color: white;
+  padding: 20px 80px;
+  margin: 24px 0;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}/*# sourceMappingURL=about.css.map */
