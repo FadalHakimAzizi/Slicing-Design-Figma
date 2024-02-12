@@ -6,6 +6,8 @@
 
 body {
   min-height: 4000px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 @mixin text-bold {
@@ -221,33 +223,35 @@ footer {
         margin-top: 5.5rem;
         .container-input {
           form {
-              input[type=text], select {
-                width: 100%;
-                padding: 20px 20px;
-                margin: 12px 0;
-                display: inline-block;
-                border: none;
-                background-color: #F3F3F3;
-                font-size: 18px;
-              }
-              input[type=textarea], select {
-                width: 100%;
-                padding: 100px 20px;
-                margin: 12px 0;
-                display: inline-block;
-                border: none;
-                background-color: #F3F3F3;
-                font-size: 18px;
-              }
-              input[type=submit] {
-                background-color: #2D2D2D;
-                color: white;
-                padding: 20px 80px;
-                margin: 24px 0;
-                border: none;
-                cursor: pointer;
-                font-size: 18px;
-              }
+            input[type="text"],
+            select {
+              width: 100%;
+              padding: 20px 20px;
+              margin: 12px 0;
+              display: inline-block;
+              border: none;
+              background-color: #f3f3f3;
+              font-size: 18px;
+            }
+            input[type="textarea"],
+            select {
+              width: 100%;
+              padding: 100px 20px;
+              margin: 12px 0;
+              display: inline-block;
+              border: none;
+              background-color: #f3f3f3;
+              font-size: 18px;
+            }
+            input[type="submit"] {
+              background-color: #2d2d2d;
+              color: white;
+              padding: 20px 80px;
+              margin: 24px 0;
+              border: none;
+              cursor: pointer;
+              font-size: 18px;
+            }
           }
         }
       }
@@ -260,5 +264,107 @@ footer {
 @media only screen and (max-width: 768px) {
   .home .heading .image-heading {
     margin-top: 5rem;
+  }
+
+  // clients
+
+  .clients {
+      .clients-cards {
+        .clients-card {
+          margin-top: 3rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  // nav
+
+  nav {
+    a.navbar-brand {
+      margin-left: -2.5rem;
+    }
+  }
+
+  // home
+
+  .home {
+    .container {
+      .heading {
+        h5,
+        h1,
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  // logos
+
+  .img1 {
+    grid-area: be;
+  }
+  .img2 {
+    grid-area: google;
+  }
+  .img3 {
+    grid-area: apple;
+  }
+  .img4 {
+    grid-area: drible;
+  }
+  .img5 {
+    grid-area: awards;
+  }
+
+  .logos {
+    width: 80%;
+    .logo-img {
+      display: grid !important;
+      grid-template-areas:
+        "google be"
+        "drible apple"
+        "awards awards";
+      gap: 50px;
+      justify-content: center !important;
+      align-items: center !important;
+    }
+  }
+
+  // skills
+
+  .skills {
+    img {
+      margin-top: 3rem;
+    }
+  }
+
+  // works
+
+  .works {
+    .container-card-works {
+      .card-works {
+        img {
+          width: 90%;
+        }
+      }
+    }
+  }
+
+  // clients
+
+  .clients {
+    .clients-card {
+      margin: 2rem 0;
+    }
+  }
+
+  // footer
+
+  footer {
+    .header-footer {
+      text-align: center;
+    }
   }
 }

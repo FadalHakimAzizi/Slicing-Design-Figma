@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 nav a.navbar-brand {
   font-weight: 600;
   font-size: 22px;
@@ -130,4 +135,22 @@ footer .container .row .field .container-input form input[type=submit] {
   border: none;
   cursor: pointer;
   font-size: 18px;
+}
+
+@media only screen and (max-width: 576px) {
+  nav a.navbar-brand {
+    margin-left: -2.5rem;
+  }
+  .main .text p {
+    margin: 0.5rem 0;
+  }
+  .main .text p:nth-child(even) {
+    height: 70px !important;
+    width: 98%;
+    background-color: #009379;
+    color: #f6dce9;
+  }
+  footer .header-footer {
+    text-align: center;
+  }
 }/*# sourceMappingURL=about.css.map */
